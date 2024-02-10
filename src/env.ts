@@ -10,7 +10,7 @@ import {
  * Load .env file or for tests the .env.test file.
  */
 dotenv.config({ path: path.join(process.cwd(), `.env${((process.env.NODE_ENV === 'test') ? '.test' : '')}`) });
-
+console.log(`env file used ${process.env.APP_PORT}`);
 /**
  * Environment variables
  */
